@@ -120,12 +120,12 @@ strcpy(quiz[7].answerC, "Navratri");
 strcpy(quiz[7].answerD, "Eid");
 quiz[7].correct_answer = 'B';
 
-strcpy(quiz[8].question, "What is the official language of the Indian government?");
+strcpy(quiz[8].question, "The song Jana-gana-mana, is orignally composed in which language?");
 strcpy(quiz[8].answerA, "English");
 strcpy(quiz[8].answerB, "Hindi");
 strcpy(quiz[8].answerC, "Bengali");
 strcpy(quiz[8].answerD, "Telugu");
-quiz[8].correct_answer = 'A';
+quiz[8].correct_answer = 'C';
 
 strcpy(quiz[9].question, "Which Indian state is known as the 'Spice Garden of India'?");
 strcpy(quiz[9].answerA, "Karnataka");
@@ -250,6 +250,8 @@ quiz[19].correct_answer = 'A';
     {
       printf("\nError reading your answer.\n");
     }
+
+    while (getchar() != '\n');
 
     printf("\n\n");
   }
