@@ -9,6 +9,11 @@
 // Total number of questions in the quiz.
 #define TOTAL_QUESTIONS 20
 
+// Define ANSI escape codes for text color
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+
 typedef struct
 {
   char question[MAX_QUESTION];
@@ -56,10 +61,18 @@ int main(void)
 void displayMenu()
 {
   printf("\n********** Quiz On INDIA   **********\n\n");
+  printf("RULES!!!\n\n");
+  printf("Only 10 seconds are given to answer a question\n");
+  printf("if time is reached the marks wont be counted\n\n");
+  printf("Options are A, B, C, D\n\n");
+  printf("There will be a total of 20 questions\n\n");
   printf("1. Start Quiz\n");
   printf("2. Exit\n\n");
 }
-
+void printColored(char *text, char *color)
+{
+  printf("%s%s%s", color, text, ANSI_COLOR_RESET);
+}
 void startQuiz()
 {
      quiz_question quiz[TOTAL_QUESTIONS];
@@ -211,12 +224,27 @@ quiz[19].correct_answer = 'A';
 
   for (int i = 0; i < TOTAL_QUESTIONS; i++)
   {
-    printf("\nQuestion %d: %s\n\n", (i + 1), quiz[i].question);
-    printf("A) %s\n", quiz[i].answerA);
-    printf("B) %s\n", quiz[i].answerB);
-    printf("C) %s\n", quiz[i].answerC);
-    printf("D) %s\n", quiz[i].answerD);
+       printf("\nQuestion %d: ", (i + 1));
+    printColored(quiz[i].question, ANSI_COLOR_GREEN);
+    printf("\n");
 
+    printf("A) ");
+    printColored(quiz[i].answerA, ANSI_COLOR_RED);
+    printf("\n");
+
+    printf("B) ");
+    printColored(quiz[i].answerB, ANSI_COLOR_RED);
+    printf("\n");
+
+    printf("C) ");
+    printColored(quiz[i].answerC, ANSI_COLOR_RED);
+    printf("\n");
+
+    printf("D) ");
+    printColored(quiz[i].answerD, ANSI_COLOR_RED);
+    printf("\n");
+    
+    
     printf("\nEnter Answer (A, B, C, or D) within 10 seconds: ");
 
     // Declare the variables for timing
@@ -250,7 +278,7 @@ quiz[19].correct_answer = 'A';
     {
       printf("\nError reading your answer.\n");
     }
-
+   // only on
     while (getchar() != '\n');
 
     printf("\n\n");
