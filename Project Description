@@ -1,0 +1,23 @@
+This project is a simple quiz program written in C that focuses on testing the user's knowledge about India. The quiz includes a set of 20 questions related to various aspects of India, such as geography, history, culture, and more. The program provides a menu with two options: starting the quiz or exiting the program.
+
+Here are the key features of the quiz program:
+
+1. Menu Display:
+
+>The program begins by displaying a menu that outlines the rules of the quiz and provides options to start the quiz or exit the program.
+
+2.Colorful Console Output:
+
+>The program uses console text colors to enhance the visual presentation of questions and answers. Functions like "setConsoleColor" and "resetConsoleColor" are used to set and reset text colors. 
+
+3.Timing Mechanism:
+
+>A time limit of 10 seconds is imposed for each question. The program records the time when the question is displayed and compares it with the time when the user provides an answer. If the user exceeds the time limit, a message is displayed indicating that time is up. 
+
+4. Scoring:
+
+>The user's answers are evaluated, and the program keeps track of the number of correct answers. At the end of the quiz, the total number of correct answers and the percentage of correct answers are displayed.
+
+5. User Interaction:
+
+>The program utilizes a loop to allow users to navigate the menu, enter their quiz answers, and provides feedback on their performance.
