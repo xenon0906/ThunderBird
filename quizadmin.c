@@ -74,7 +74,7 @@ void displayMenu()
   printf("\n********** Quiz On INDIA   **********\n\n");
   printf("RULES!!!\n\n");
   printf("Only 10 seconds are given to answer a question\n");
-  printf("if time is reached the marks wont be counted\n\n");
+  printf("if time is completed the marks wont be counted\n\n");
   printf("Options are A, B, C, D\n\n");
   printf("There will be a total of 20 questions\n\n");
   printf("1. Start Quiz\n");
