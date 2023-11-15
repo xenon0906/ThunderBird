@@ -63,7 +63,7 @@ void displayMenu()
   printf("\n********** Quiz On INDIA   **********\n\n");
   printf("RULES!!!\n\n");
   printf("Only 10 seconds are given to answer a question\n");
-  printf("if time is reached the marks wont be counted\n\n");
+  printf("if time is completed the marks wont be counted\n\n");
   printf("Options are A, B, C, D\n\n");
   printf("There will be a total of 20 questions\n\n");
   printf("1. Start Quiz\n");
@@ -78,7 +78,7 @@ void startQuiz()
      quiz_question quiz[TOTAL_QUESTIONS];
 
   strcpy(quiz[0].question, "What is the capital of India?");
-  strcpy(quiz[0].answerA, "Delhi");
+  strcpy(quiz[0].answerA, "New Delhi");
   strcpy(quiz[0].answerB, "Mumbai");
   strcpy(quiz[0].answerC, "Kolkata");
   strcpy(quiz[0].answerD, "Chennai");
@@ -126,11 +126,11 @@ strcpy(quiz[6].answerC, "Uttar Pradesh");
 strcpy(quiz[6].answerD, "Madhya Pradesh");
 quiz[6].correct_answer = 'A';
 
-strcpy(quiz[7].question, "Which Indian festival is known as the 'Festival of Colors'?");
-strcpy(quiz[7].answerA, "Diwali");
-strcpy(quiz[7].answerB, "Holi");
-strcpy(quiz[7].answerC, "Navratri");
-strcpy(quiz[7].answerD, "Eid");
+strcpy(quiz[7].question, "The Indian Space Research Organisation (ISRO) successfully launched its first interplanetary mission to Mars in which year?");
+strcpy(quiz[7].answerA, "2011");
+strcpy(quiz[7].answerB, "2013");
+strcpy(quiz[7].answerC, "2015");
+strcpy(quiz[7].answerD, "2017");
 quiz[7].correct_answer = 'B';
 
 strcpy(quiz[8].question, "The song Jana-gana-mana, is orignally composed in which language?");
@@ -175,11 +175,11 @@ strcpy(quiz[13].answerC, "Hyderabad");
 strcpy(quiz[13].answerD, "Chennai");
 quiz[13].correct_answer = 'B';
 
-strcpy(quiz[14].question, "What is the currency of India?");
-strcpy(quiz[14].answerA, "Rupee");
-strcpy(quiz[14].answerB, "Yen");
-strcpy(quiz[14].answerC, "Dollar");
-strcpy(quiz[14].answerD, "Euro");
+strcpy(quiz[14].question, "The Rann of Kutch, known for its seasonal salt marsh, is located in which Indian state?");
+strcpy(quiz[14].answerA, "Gujarat");
+strcpy(quiz[14].answerB, "Rajasthan");
+strcpy(quiz[14].answerC, "Maharashtra");
+strcpy(quiz[14].answerD, "Karnataka");
 quiz[14].correct_answer = 'A';
 
 strcpy(quiz[15].question, "Which state in India is known as the 'Land of Five Rivers'?");
@@ -210,11 +210,11 @@ strcpy(quiz[18].answerC, "Navratri");
 strcpy(quiz[18].answerD, "Eid");
 quiz[18].correct_answer = 'B';
 
-strcpy(quiz[19].question, "What is the national currency of India?");
-strcpy(quiz[19].answerA, "Rupee");
-strcpy(quiz[19].answerB, "Rupiah");
-strcpy(quiz[19].answerC, "Dinar");
-strcpy(quiz[19].answerD, "Ringgit");
+strcpy(quiz[19].question, "Who was the first woman Prime Minister of India?");
+strcpy(quiz[19].answerA, "Indira Gandhi");
+strcpy(quiz[19].answerB, "Sonia Gandhi");
+strcpy(quiz[19].answerC, "Mamta Banerjee");
+strcpy(quiz[19].answerD, "Jayalalithaa");
 quiz[19].correct_answer = 'A';
 
 
