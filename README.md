@@ -36,14 +36,4 @@ Welcome to the Thunderbird Quiz Program! This simple quiz application, written i
 ## Dependencies
 - This program requires a C compiler to compile and run.
 
-## Compilation and Execution
-1. Compile the program using a C compiler. For example:
-   ```bash
-   gcc quiz_program.c -o quiz_program
-   ```
-2. Run the compiled program:
-   ```bash
-   ./quiz_program
-   ```
-
 Enjoy testing your knowledge about India with the Thunderbird Quiz Program!
