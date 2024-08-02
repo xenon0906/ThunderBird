@@ -1,7 +1,3 @@
-Sure, here's a README file in a format with the heading "Thunderbird":
-
----
-
 # Thunderbird Quiz Program
 
 Welcome to the Thunderbird Quiz Program! This simple quiz application, written in C, tests your knowledge about India, covering various aspects such as geography, history, culture, and more. The program features an interactive menu, colorful console output, a timing mechanism, and a scoring system to enhance your quiz experience.
@@ -51,7 +47,3 @@ Welcome to the Thunderbird Quiz Program! This simple quiz application, written i
    ```
 
 Enjoy testing your knowledge about India with the Thunderbird Quiz Program!
-
----
-
-Feel free to customize this README further based on your specific needs or additional features in your quiz program.
